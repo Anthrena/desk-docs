@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" fill="none" role="img" aria-label="Anthrena">
+  <path
+    d="M42 6C56 14 68 22 68 36C68 50 56 56 42 58C28 56 16 50 16 36C16 22 28 14 42 6Z"
+    fill="#3bb090"
+  />
+  <path
+    d="M42 22C48 28 52 33 52 40C52 46 48 50 42 52C36 50 32 46 32 40C32 33 36 28 42 22Z"
+    fill="#0f2e22"
+    opacity="0.85"
+  />
+</svg>
