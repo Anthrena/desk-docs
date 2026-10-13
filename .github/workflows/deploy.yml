@@ -1,0 +1,43 @@
+# The built-in "pages build and deployment" workflow ran once, when Pages
+# was enabled, and has ignored every later push to gh-pages. This workflow
+# deploys that branch on each handbook publish.
+name: Deploy handbook
+
+on:
+  push:
+    branches:
+      - main
+      - gh-pages
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout handbook
+        uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+
+      - name: Upload handbook
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
