@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071a10"/>
+      <stop offset="0.42" stop-color="#1c5231"/>
+      <stop offset="0.78" stop-color="#58b876"/>
+      <stop offset="1" stop-color="#a6de9f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <path d="M160 200C230 240 290 280 290 350C290 420 230 450 160 460C90 450 30 420 30 350C30 280 90 240 160 200Z" fill="#29a383"/>
+  <text x="340" y="300" fill="#ffffff" font-family="system-ui,sans-serif" font-size="72" font-weight="700">Anthrena Desk</text>
+  <text x="340" y="370" fill="#e8f0ea" font-family="system-ui,sans-serif" font-size="36">Customer handbook</text>
+</svg>
